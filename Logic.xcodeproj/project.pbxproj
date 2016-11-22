@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		462307061DDE6E0300FD8544 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 462307051DDE6E0300FD8544 /* main.cpp */; };
+		4623070E1DDE6FED00FD8544 /* String2Int.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4623070D1DDE6FED00FD8544 /* String2Int.cpp */; };
+		46C4BB431DDFE12A0047A676 /* Operate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46C4BB421DDFE12A0047A676 /* Operate.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,9 @@
 /* Begin PBXFileReference section */
 		462307021DDE6E0200FD8544 /* Logic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Logic; sourceTree = BUILT_PRODUCTS_DIR; };
 		462307051DDE6E0300FD8544 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4623070C1DDE6E7C00FD8544 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		4623070D1DDE6FED00FD8544 /* String2Int.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = String2Int.cpp; sourceTree = "<group>"; };
+		46C4BB421DDFE12A0047A676 /* Operate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Operate.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +62,10 @@
 		462307041DDE6E0300FD8544 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				4623070C1DDE6E7C00FD8544 /* Header.h */,
+				4623070D1DDE6FED00FD8544 /* String2Int.cpp */,
 				462307051DDE6E0300FD8544 /* main.cpp */,
+				46C4BB421DDFE12A0047A676 /* Operate.cpp */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -118,7 +126,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C4BB431DDFE12A0047A676 /* Operate.cpp in Sources */,
 				462307061DDE6E0300FD8544 /* main.cpp in Sources */,
+				4623070E1DDE6FED00FD8544 /* String2Int.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +249,7 @@
 				4623070B1DDE6E0300FD8544 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
