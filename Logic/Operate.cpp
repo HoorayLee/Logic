@@ -73,17 +73,18 @@ public:
         {
             if (is_variable(tmp.arg[i]))
             {
-                if (new_var == "")
-                {
+//                if (new_var == "")
+//                {
                     if (!is_locked())
                     {
                         aug_idx();
                         lock_idx();
                     }
-                    new_var = "x" + num2str(get_idx());
-                }
+                    new_var = tmp.arg[i] + num2str(get_idx());
+//                }
                 tmp.arg[i] = new_var;
                 modified = true;
+                tmp.is_fact = false;
             }
         }
         if (modified)
@@ -208,33 +209,42 @@ public:
         return new_x;
     }
     
-    bool ask(Clause query)
+    bool ask(Clause query, map<string, int> &checkcircle)
     {
         vector<multimap<string, Clause>::iterator> bvec;
         multimap<string, Clause>::iterator iter;
         stack<Clause> stk;
         map<string, string> the;
         stk.push(query);
-        bool flag;
+        bool flag, second;
+        second = false;
+        
         while (!stk.empty())
         {
             flag = false;
             Clause cur = stk.top();
             cur = subst(cur, the, flag);
+            
+
             if (flag)
             {
-                if (fetch_rules_for_goal(cur).size() == 0) {
-                    return false;
+                if (!checkcircle.count(cur.pred_name)) {
+                    second = ask(cur, checkcircle) == true ? true : second;
+                    if(second){
+                        return true;
+                    }
                 }
                 stk.pop();
                 continue;
             }
+            
             bvec = fetch_rules_for_goal(cur);
             //
             if (bvec.size() == 0){
                 return false;
             }
             //
+            //stk.pop();
             for (int i = 0; i < bvec.size(); i++)
             {
                 iter = bvec[i];
@@ -242,8 +252,8 @@ public:
                 {
                     return false;
                 }
-//                stk.pop();
-//                stk.push(cur);
+                stk.pop();
+                //stk.push(cur);
                 
                 if (!iter->second.is_fact)
                 {
@@ -254,10 +264,18 @@ public:
                         //p = subst(p, the);
                         stk.push(p);
                     }
+                    
                 }
+                else if (!iter -> second.pred_name.compare(cur.pred_name)){
+                    return true;
+                }
+                stk.push(cur);
             }
+            //stk.pop();
+            checkcircle[cur.pred_name] ++;
         }
-        return true;
+//        checkcircle.clear();
+        return false;
     }
     
     Clause str2clause(string str)
@@ -335,7 +353,7 @@ public:
                     lock_idx();
                 }
                 
-                new_variable = "x" + num2str(get_idx());
+                new_variable = clus.arg[i] + num2str(get_idx());
                 clus.arg[i] = new_variable;
             }
         }
@@ -370,6 +388,8 @@ private:
     multimap<string, Clause> kb;	//knowledge base: the key is the predicate's name of concolusion of
     map<string, int> constant;
     map<string, vector<string> > prem;		//the key is original string (member str in Clause)
+ 
+
     int variable_idx = 0;
     bool lock = false;
 

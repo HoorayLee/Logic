@@ -69,7 +69,8 @@ int main(int argc, const char * argv[]) {
     //////////////////////////////////////////////////////////
     ofstream oinfo("/Users/kouruiri/Documents/Logic/Logic/output.txt");
     for(i = 0; i < query.size(); i++){
-        if (OP.ask(query[i])) {
+        map<string, int> tmp;
+        if (OP.ask(query[i], tmp)) {
             oinfo << "TRUE" << endl;
         }
         else{
