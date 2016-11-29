@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "367"
-            endingLineNumber = "367"
+            startingLineNumber = "371"
+            endingLineNumber = "371"
             landmarkName = "tell(string str)"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "369"
-            endingLineNumber = "369"
+            startingLineNumber = "373"
+            endingLineNumber = "373"
             landmarkName = "tell(string str)"
             landmarkType = "5">
          </BreakpointContent>
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501494579.039727"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "decompose_clause(string str)"
             landmarkType = "5">
          </BreakpointContent>
@@ -122,12 +122,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "228"
-            endingLineNumber = "228"
-            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle;)"
+            startingLineNumber = "232"
+            endingLineNumber = "232"
+            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -138,12 +138,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "248"
-            endingLineNumber = "248"
-            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle;)"
+            startingLineNumber = "252"
+            endingLineNumber = "252"
+            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -154,12 +154,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "278"
-            endingLineNumber = "278"
-            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle;)"
+            startingLineNumber = "282"
+            endingLineNumber = "282"
+            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -186,12 +186,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "222"
-            endingLineNumber = "222"
-            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle;)"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
+            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -202,12 +202,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "244"
-            endingLineNumber = "244"
-            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle;)"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
+            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -218,11 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "fetch_rules_for_goal(Clause goal)"
             landmarkType = "5">
          </BreakpointContent>
@@ -250,23 +250,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "342"
-            endingLineNumber = "342"
-            landmarkName = "tell(string str)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "346"
@@ -282,23 +266,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
-            landmarkName = "fetch_rules_for_goal(Clause goal)"
+            startingLineNumber = "350"
+            endingLineNumber = "350"
+            landmarkName = "tell(string str)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "106"
@@ -310,15 +294,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "fetch_rules_for_goal(Clause goal)"
             landmarkType = "5">
          </BreakpointContent>
@@ -330,11 +314,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "fetch_rules_for_goal(Clause goal)"
             landmarkType = "5">
          </BreakpointContent>
@@ -346,11 +330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
             landmarkName = "fetch_rules_for_goal(Clause goal)"
             landmarkType = "5">
          </BreakpointContent>
@@ -362,11 +346,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "362"
-            endingLineNumber = "362"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "fetch_rules_for_goal(Clause goal)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Logic/Operate.cpp"
+            timestampString = "501991491.13375"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "366"
+            endingLineNumber = "366"
             landmarkName = "tell(string str)"
             landmarkType = "5">
          </BreakpointContent>
@@ -378,39 +378,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "377"
-            endingLineNumber = "377"
-            landmarkName = "tell(string str)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "379"
-            endingLineNumber = "379"
-            landmarkName = "tell(string str)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "381"
@@ -426,11 +394,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "382"
-            endingLineNumber = "382"
+            startingLineNumber = "383"
+            endingLineNumber = "383"
             landmarkName = "tell(string str)"
             landmarkType = "5">
          </BreakpointContent>
@@ -442,11 +410,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "385"
+            endingLineNumber = "385"
+            landmarkName = "tell(string str)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Logic/Operate.cpp"
+            timestampString = "501991491.13375"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "386"
+            endingLineNumber = "386"
+            landmarkName = "tell(string str)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Logic/Operate.cpp"
+            timestampString = "501991491.13375"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "fetch_rules_for_goal(Clause goal)"
             landmarkType = "5">
          </BreakpointContent>
@@ -458,11 +458,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "357"
-            endingLineNumber = "357"
+            startingLineNumber = "361"
+            endingLineNumber = "361"
             landmarkName = "tell(string str)"
             landmarkType = "5">
          </BreakpointContent>
@@ -474,12 +474,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "250"
-            endingLineNumber = "250"
-            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle;)"
+            startingLineNumber = "254"
+            endingLineNumber = "254"
+            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -490,12 +490,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "260"
-            endingLineNumber = "260"
-            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle;)"
+            startingLineNumber = "264"
+            endingLineNumber = "264"
+            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -506,28 +506,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "261"
-            endingLineNumber = "261"
-            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle;)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "265"
             endingLineNumber = "265"
-            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle;)"
+            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -538,12 +522,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "244"
-            endingLineNumber = "244"
-            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle;)"
+            startingLineNumber = "269"
+            endingLineNumber = "269"
+            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -554,12 +538,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "251"
-            endingLineNumber = "251"
-            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle;)"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
+            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -570,12 +554,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "253"
-            endingLineNumber = "253"
-            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle;)"
+            startingLineNumber = "255"
+            endingLineNumber = "255"
+            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -586,11 +570,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "200"
-            endingLineNumber = "200"
+            startingLineNumber = "257"
+            endingLineNumber = "257"
+            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Logic/Operate.cpp"
+            timestampString = "501991491.13375"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
             landmarkName = "subst(Clause x, map&lt;string, string&gt; &amp;theta, bool &amp;flag)"
             landmarkType = "5">
          </BreakpointContent>
@@ -602,12 +602,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "274"
-            endingLineNumber = "274"
-            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle;)"
+            startingLineNumber = "278"
+            endingLineNumber = "278"
+            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -618,12 +618,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "270"
-            endingLineNumber = "270"
-            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle;)"
+            startingLineNumber = "274"
+            endingLineNumber = "274"
+            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -634,11 +634,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "372"
-            endingLineNumber = "372"
+            startingLineNumber = "376"
+            endingLineNumber = "376"
             landmarkName = "tell(string str)"
             landmarkType = "5">
          </BreakpointContent>
@@ -650,11 +650,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501553619.371718"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "update_clause_str(string &amp;str, string &amp;new_var)"
             landmarkType = "5">
          </BreakpointContent>
@@ -666,11 +666,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
             landmarkName = "update_clause_str(string &amp;str, string &amp;new_var)"
             landmarkType = "5">
          </BreakpointContent>
@@ -682,11 +682,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "374"
-            endingLineNumber = "374"
+            startingLineNumber = "378"
+            endingLineNumber = "378"
             landmarkName = "tell(string str)"
             landmarkType = "5">
          </BreakpointContent>
@@ -694,16 +694,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "233"
-            endingLineNumber = "233"
-            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle;)"
+            startingLineNumber = "237"
+            endingLineNumber = "237"
+            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -714,12 +714,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "242"
+            endingLineNumber = "242"
+            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Logic/Operate.cpp"
+            timestampString = "501991491.13375"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "236"
+            endingLineNumber = "236"
+            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Logic/Operate.cpp"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "238"
             endingLineNumber = "238"
-            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle;)"
+            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -730,12 +762,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501556972.11933"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "232"
-            endingLineNumber = "232"
-            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle;)"
+            startingLineNumber = "235"
+            endingLineNumber = "235"
+            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -746,28 +778,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501557207.776617"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "234"
-            endingLineNumber = "234"
-            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle;)"
+            startingLineNumber = "245"
+            endingLineNumber = "245"
+            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Logic/Operate.cpp"
-            timestampString = "501986662.568199"
+            timestampString = "501991491.13375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "231"
-            endingLineNumber = "231"
-            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle;)"
+            startingLineNumber = "247"
+            endingLineNumber = "247"
+            landmarkName = "ask(Clause query, map&lt;string, int&gt; &amp;checkcircle)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Logic/Operate.cpp"
+            timestampString = "501991491.13375"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "fetch_rules_for_goal(Clause goal)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

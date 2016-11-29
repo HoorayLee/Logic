@@ -28,9 +28,13 @@ public:
         //return value 2: argument 1 (if any)
         //return value 3: argument 2 (if any)
         //return value 4: (if any)
+        int head = 0;
         char p = '(', c = ',';
+        str = erasespace(str);
         size_t tag = str.find(p);
-
+        if(tag == 0){
+            head ++;
+        }
         size_t loc = str.find(p, tag + 1);
         vector<string> ret;
         if (tag == string::npos)
@@ -39,7 +43,7 @@ public:
         }
         else
         {
-            ret.push_back(str.substr(0, tag));
+            ret.push_back(str.substr(head, tag));
             size_t loc2 = tag + 1;
             loc = str.find(c, loc2);
             if (loc == string::npos)//one argument
