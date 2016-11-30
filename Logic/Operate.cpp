@@ -30,6 +30,7 @@ public:
         //return value 4: (if any)
         int head = 0;
         char p = '(', c = ',';
+        erasetuples(str);
         str = erasespace(str);
         size_t tag = str.find(p);
         if(tag == 0){
@@ -84,7 +85,7 @@ public:
                         aug_idx();
                         lock_idx();
                     }
-                    new_var = tmp.arg[i] + num2str(get_idx());
+                    new_var = "[" + tmp.arg[i] + num2str(get_idx()) + "]";
 //                }
                 tmp.arg[i] = new_var;
                 modified = true;
@@ -107,7 +108,7 @@ public:
              iter != bound.second;
              iter++){
             match = true;
-            if (iter->second.arg.size() == goal.arg.size())
+            if (iter -> second.arg.size() == goal.arg.size() && iter -> second.is_true == goal.is_true)
             {
                 for (unsigned i = 0; i < goal.arg.size(); i++)
                 {
@@ -186,6 +187,82 @@ public:
         return true;
     }
     
+    vector<string> preprocess(string &str){
+        erasetuples(str);
+        str = erasespace(str);
+        size_t i = str.find('|');
+        size_t k;
+        size_t j = str.find("=>");
+        int imply = 0;
+        int lock = 0;
+        vector<int> ad;
+        string premise, conclusion;
+        string compre, t1;
+        vector<string> pre, t;
+        for(int count = 0; count < str.length(); count++){
+            if(str[count] == '('){
+                lock++;
+            }
+            else if(str[count] == ')'){
+                lock--;
+            }
+            else if (str[count] == '&' && !lock) {
+                ad.push_back(count);
+            }
+            else if(str[count] == '|' && !lock){
+                imply = count;
+            }
+        }
+        if(ad.size() > 0){
+            int tmp = 0;
+            for(int m = 0; m < ad.size(); m++){
+                t1 = str.substr(tmp, ad[m] - tmp);
+                t = preprocess(t1);
+                tmp = ad[m] + 1;
+                for(int x = 0; x < t.size(); x++){
+                    pre.push_back(t[x]);
+                }
+                t.clear();
+            }
+            t1 = str.substr(tmp, str.length() - 1);
+            t = preprocess(t1);
+            for(int x = 0; x < t.size(); x++){
+                pre.push_back(t[x]);
+            }
+        }
+        else if(str.find("~") != string::npos && imply){
+            str[str.find("~")] = ' ';
+            str[imply] = '=';
+            str.insert(str.begin() + imply + 1, '>');
+            return preprocess(str);
+            
+        }
+        else if(i != string::npos && j != string::npos){
+            premise = erasespace(str.substr(0, j));
+            conclusion = erasespace(str.substr(j + 2, str.length() - 1));
+            
+            erasetuples(premise);
+            pre.push_back(premise.substr(0, i - 1) + "=>" + conclusion);
+            while(premise.find("|", i)!=string::npos)
+            {
+                k = premise.find("|", i);
+                compre = premise.substr(i + 1, k - i - 1) + "=>" + conclusion;
+                pre.push_back(compre);
+                
+                i = k+SIZE("|");
+            }
+            pre.push_back(premise.substr(i,premise.length() - 1) + "=>" + conclusion);
+        }
+        else{
+            pre.push_back(str);
+        }
+        
+        
+        return pre;
+        
+        
+    }
+    
     Clause subst(Clause x, map<string, string> &theta, bool &flag)
     {
         //temporary
@@ -220,33 +297,35 @@ public:
         stack<Clause> stk;
         map<string, string> the;
         stk.push(query);
-        bool flag, second;
+        bool flag, second, result;
         second = false;
+        int count = 0;
+        vector<int> countset;
+        result = false;
         
         while (!stk.empty())
         {
+            
             flag = false;
             Clause cur = stk.top();
             cur = subst(cur, the, flag);
             
-
-            if (flag)
-            {
-                if (!checkcircle.count(cur.pred_name)) {
-                    second = ask(cur, checkcircle) == true ? true : second;
-                    if(second){
-                        return true;
-                    }
-                }
+            if (checkcircle.count(cur.pred_name)) {
                 stk.pop();
                 continue;
             }
+
+//            if (flag)
+//            {
+//                stk.pop();
+//                continue;
+//            }
             
             bvec = fetch_rules_for_goal(cur);
             //
-            if (bvec.size() == 0){
-                return false;
-            }
+//            if (bvec.size() == 0){
+//                return false;
+//            }
             //
             //stk.pop();
             for (int i = 0; i < bvec.size(); i++)
@@ -256,30 +335,45 @@ public:
                 {
                     return false;
                 }
-                stk.pop();
-                //stk.push(cur);
                 
+//                stk.push(cur);
+                stk.pop();
                 if (!iter->second.is_fact)
                 {
+                    count = 0;
                     map<string, vector<string> >::iterator iiter = prem.find(iter->second.str);
                     for (size_t j = 0; j < iiter->second.size(); j++)
                     {
                         Clause p = str2clause(iiter->second[j]);
                         //p = subst(p, the);
                         stk.push(p);
+                        count ++;
                     }
+                    countset.push_back(count);
                     
                 }
                 else if (!iter -> second.pred_name.compare(cur.pred_name)){
-                    return true;
+                    result = true;
+                    if(stk.size() == 0){
+                        return result;
+                    }
+                    
+                    for(int i = 0; i < countset[countset.size() - 1]; i++){
+                        result = result && ask(stk.top(), checkcircle);
+                        stk.pop();
+                    }
+                    
+                    if(stk.size() == 0 && result == true){
+                        return result;
+                    }
                 }
-                stk.push(cur);
+  //              stk.push(cur);
             }
             //stk.pop();
             checkcircle[cur.pred_name] ++;
         }
 //        checkcircle.clear();
-        return false;
+        return result;
     }
     
     Clause str2clause(string str)
@@ -314,6 +408,9 @@ public:
         while(str[0] == ' '){
             str.erase(str.begin());
         }
+        while(str[str.length() - 1] == ' '){
+            str.erase(--str.end());
+        }
         
         return str;
     }
@@ -326,8 +423,17 @@ public:
         return str;
     }
     
+    void erasetuples(string &str){
+        if(str[0] == '(' && str[str.length() - 1] == ')'){
+            str.erase(str.begin());
+            str.erase(--str.end());
+        }
+    }
+    
     void tell(string str)
     {
+        str = erasespace(str);
+        erasetuples(str);
         size_t loc1 = str.find("=>");
         string premise = "", conclusion = "", clause = "";
         Clause clus;
@@ -350,14 +456,14 @@ public:
         for (int i = 0; i < clus.arg.size(); i++)
         {
             if (is_variable(clus.arg[i]))
-            {
+            { 
                 if (!is_locked())
                 {
                     aug_idx();
                     lock_idx();
                 }
                 
-                new_variable = clus.arg[i] + num2str(get_idx());
+                new_variable = "[" + clus.arg[i] + num2str(get_idx()) + "]";
                 clus.arg[i] = new_variable;
             }
         }
@@ -365,6 +471,7 @@ public:
         
         if(SIZE(premise)>0)
         {
+            erasetuples(premise);
             loc1 = 0;
             clus.is_fact = false;
             size_t loc2 = string::npos;
@@ -425,7 +532,7 @@ private:
     inline bool is_variable(const string str)
     {
         if (str.length() < 2) return true;
-        if (str[0] == 'x'&&atoi(str.substr(1, str.size() - 1).c_str()) != 0) return true;
+        if (str[0] == '[') return true;
         return false;
     }
     

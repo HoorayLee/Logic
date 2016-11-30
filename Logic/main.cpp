@@ -36,6 +36,7 @@ int main(int argc, const char * argv[]) {
     //           Read all the query  <Head>                 //
     //////////////////////////////////////////////////////////
     getline(iinfo, num);
+    num = OP.erasespace(num);
     int n = toint.Toint(num);
     
     for(i = 0;i < n; i++)
@@ -55,12 +56,19 @@ int main(int argc, const char * argv[]) {
     //              Read the knowledge  <Head>              //
     //////////////////////////////////////////////////////////
     getline(iinfo, num);
+    num = OP.erasespace(num);
     n = toint.Toint(num);
+    vector<string> res;
     
     for(i = 0;i < n; i++)
     {
         getline(iinfo, knowledge);
-        OP.tell(knowledge);
+        res = OP.preprocess(knowledge);
+        for (int k = 0; k < res.size(); k++) {
+            OP.tell(res[k]);
+        }
+        
+        res.clear();
     }
     iinfo.close();
     
