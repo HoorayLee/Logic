@@ -1,0 +1,12 @@
+You will use the resolution inference algorithm, full first-order version (see slide 76 of Monday-Wednesday
+slides for session14-15) to solve this problem.
+Once you have completed this project Dr. Beakerman will use it to expedite the training of KM-52a mice and thus usher in a new era of peace and prosperity. After that he will collect his Nobel prize and from then on forget to ever mention your name when talking about how to train KM-52a mice.
+Format for input.txt:
+<NQ = NUMBER OF QUERIES>
+<QUERY 1>
+...
+<QUERY NQ>
+<NS = NUMBER OF GIVEN SENTENCES IN THE KNOWLEDGE BASE>
+<SENTENCE 1>
+...
+<SENTENCE NS>
